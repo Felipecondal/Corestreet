@@ -1,0 +1,24 @@
+.content{
+    display: flex;
+}
+
+.headerleft, .headerright{
+    Background-color: #1F2937;
+    color: white;
+    padding: 20px;
+    flex: 1;
+}
+.headerleft{
+    align-content: flex-start;
+}
+
+.headerright{
+    align-content: flex-end;
+}
+.footer{
+    Background-color: #1F2937;
+    justify-content: center;
+    align-items: flex-end;
+    font-size:18px;
+    color:white;
+}
