@@ -1,24 +1,48 @@
-.content{
+*{
+    box-sizing:border-box;
+    /*border: thin solid orange;*/
+    margin: 0;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}
+
+header{
     display: flex;
+    justify-content: space-between;
 }
 
 .headerleft, .headerright{
     Background-color: #1F2937;
     color: white;
     padding: 20px;
-    flex: 1;
+    display:flex;
+    flex: 1 1 auto;
 }
+
 .headerleft{
-    align-content: flex-start;
+    justify-content: flex-start;
 }
 
 .headerright{
-    align-content: flex-end;
+    justify-content: flex-end;
 }
-.footer{
+
+footer{
+    display:inline-flex;
     Background-color: #1F2937;
-    justify-content: center;
-    align-items: flex-end;
     font-size:18px;
     color:white;
+    justify-content:flex-end;
+}
+
+.title{
+    font-weight: bold;
 }
