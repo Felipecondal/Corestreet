@@ -1,91 +1,61 @@
 *{
-    box-sizing:border-box;
-    border: thin solid orange;
     margin: 0;
-}
-
-h2{
-    justify-content: center;
+    padding: 0;
 }
 
 body{
     display:flex;
-    flex-direction: column;
-    min-height: 100vh;
+    flex-direction:column;
+    height: 100vh;
+}
+header{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-color:rgb(54, 54, 228);
+}
+
+.logo-space{
+    display:flex;
+    justify-content:center;
+}
+
+.logo{
+    max-height:45px;
+    max-width: auto;
+    background-color:rgb(59, 59, 163);
+    opacity:1;
+}
+
+.links-space{
+    display:flex;
+    justify-content:space-between;
+}
+
+a{
+    text-decoration:none;
+    color: black;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+title{
+    display:flex;
+    justify-content:center;
+}
+
+nav a:hover{
+    color:white;
 }
 
 main{
-    display: flex;
-    flex-direction: column;
     flex-grow: 1;
-}
 
-.heroimage{
-    background-image: url("images/heroimage.jpg");
-    background-repeat:no-repeat;
-    min-height: 25vh;
-    width:auto;
-    height:35px;
-}
-
-h1 div{
-    display:flex;
-    background-color: rbga(0,0,0,.95);
-    color:white;
-    min-height: 100vh;
-    justify-content: center;
-    align-items:center;
-    font-weight: bold;
-}
-
-.title{
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-}
-
-.headerleft, .headerright{
-    Background-color: #1F2937;
-    color: white;
-    padding: 20px;
-    display:flex;
-    flex: 1 1 auto;
-}
-
-.headerleft{
-    justify-content: flex-start;
-}
-
-.headerright{
-    justify-content: flex-end;
 }
 
 footer{
-    display:inline-flex;
-    Background-color: #1F2937;
-    font-size:18px;
-    color:white;
-    justify-content:flex-end;
-}
-
-.title{
+    display:flex;
+    background-color: rgb(54, 54, 228);
     font-weight: bold;
-    display:inline-flex;
-}
-
-@media (max-width:700px){
-    header{
-        flex-flow: column wrap;
-    }
-    .headerright, .headerleft{
-        justify-content: center;
-    }
-    footer{
-        justify-content: center;
-    }
+    justify-content:center;
 }
