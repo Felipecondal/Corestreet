@@ -1,7 +1,11 @@
 *{
     box-sizing:border-box;
-    /*border: thin solid orange;*/
+    border: thin solid orange;
     margin: 0;
+}
+
+h2{
+    justify-content: center;
 }
 
 body{
@@ -11,7 +15,33 @@ body{
 }
 
 main{
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+}
+
+.heroimage{
+    background-image: url("images/heroimage.jpg");
+    background-repeat:no-repeat;
+    min-height: 25vh;
+    width:auto;
+    height:35px;
+}
+
+h1 div{
+    display:flex;
+    background-color: rbga(0,0,0,.95);
+    color:white;
+    min-height: 100vh;
+    justify-content: center;
+    align-items:center;
+    font-weight: bold;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
 }
 
 header{
@@ -45,4 +75,17 @@ footer{
 
 .title{
     font-weight: bold;
+    display:inline-flex;
+}
+
+@media (max-width:700px){
+    header{
+        flex-flow: column wrap;
+    }
+    .headerright, .headerleft{
+        justify-content: center;
+    }
+    footer{
+        justify-content: center;
+    }
 }
