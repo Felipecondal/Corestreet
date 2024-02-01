@@ -64,9 +64,10 @@ main{
 .box{
     margin: 5px;
     display:flex;
+    max-width: 100%;
 }
 
-.two{
+.two, .three, .four, .five{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -93,11 +94,11 @@ main{
 
 }
 
-.box2image{
+.box2image img{
     display: flex;
-    flex-grow: 1;
-    min-height: 70vh;
-    min-width:100vh;
+    max-width:100%;
+    height: auto;
+    align-items: center;
     
 }
 
