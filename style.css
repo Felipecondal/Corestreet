@@ -63,10 +63,13 @@ main{
 
 .box{
     margin: 5px;
+    display:flex;
 }
 
-.box .one{
+.two{
     display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-image{
@@ -88,6 +91,20 @@ main{
     align-items: center;
     justify-content: center;
 
+}
+
+.box2image{
+    display: flex;
+    flex-grow: 1;
+    min-height: 70vh;
+    min-width:100vh;
+    
+}
+
+.box2text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer{
