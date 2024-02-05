@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(197, 161, 161);
+    background-color: rgb(188, 163, 127);
 }
 
 body{
@@ -17,7 +17,7 @@ header{
 }
 
 header, footer, .logo-space, .logo, .links-space, a{
-    background-color:rgb(75, 75, 145);
+    background-color:rgb(17, 57, 70);
 }
 
 .logo-space{
@@ -39,7 +39,7 @@ header, footer, .logo-space, .logo, .links-space, a{
 
 a{
     text-decoration:none;
-    color: black;
+    color: rgb(188, 163, 127);
     font-weight: 600;
     padding-right: 10px;
 }
@@ -50,7 +50,7 @@ title{
 }
 
 nav a:hover{
-    color:white;
+    color: rgb(234, 215, 187);
 }
 
 main{
@@ -62,7 +62,7 @@ main{
 }
 
 .box{
-    margin: 5px;
+    margin: 2px;
     display:flex;
     max-width: 100%;
 }
@@ -87,6 +87,7 @@ main{
     min-height: inherit;
     color: white;
     flex-grow: 1;
+    flex-shrink: 1;
     display:flex;
     background-color: rgba(0,0,0,.50);
     align-items: center;
@@ -102,7 +103,7 @@ main{
     
 }
 
-.box2text{
+.textbox{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -112,4 +113,25 @@ footer{
     display:flex;
     font-weight: bold;
     justify-content:center;
+    color: rgb(188, 163, 127);
+}
+
+@media (min-width: 1024px) {
+    .three, .five{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .two, .four{
+        display:flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .textbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
